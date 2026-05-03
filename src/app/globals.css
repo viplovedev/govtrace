@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: #f5f7fa;
+  color: #1a1a2e;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f5f7fa; }
+::-webkit-scrollbar-thumb { background: #c5cae9; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
+
+/* Nav overflow */
+.nav-scroll {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.nav-scroll::-webkit-scrollbar { display: none; }
+
+/* Transitions */
+.transition-fast { transition: all 0.15s ease; }
+
+/* Card base */
+.gt-card {
+  background: #ffffff;
+  border: 0.5px solid #e0e4ec;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Progress bar animations */
+@keyframes fillBar {
+  from { width: 0; }
+  to   { width: var(--target-width); }
+}
+
+.fill-animate {
+  animation: fillBar 0.5s ease forwards;
+}
