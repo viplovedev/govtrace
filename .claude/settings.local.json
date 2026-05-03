@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --yes)",
+      "Bash(zsh -l -c \"which node npm npx && node --version && npm --version\")",
+      "Bash(/opt/homebrew/bin/brew --version)",
+      "Read(//opt/homebrew/**)",
+      "Bash(mdfind -name \"node\")",
+      "Bash(grep -E \"bin/node$\")",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_in_Chrome__browser_batch",
+      "Bash(curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh)",
+      "Bash(bash)",
+      "Bash(mdfind \"kMDItemKind == 'Application'\")",
+      "Bash(hdiutil attach *)",
+      "Bash(cp -R \"/Volumes/VS Code/Visual Studio Code.app\" /Applications/)",
+      "Bash(hdiutil detach *)",
+      "Bash(open -a \"/Applications/Visual Studio Code.app\" /Users/viplove/Documents/git/govtrace)",
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__Claude_in_Chrome__computer",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git rm *)",
+      "Bash(git -C /Users/viplove/Documents/git/govtrace remote add origin https://github.com/viplovedev/govtrace.git)",
+      "Bash(git -C /Users/viplove/Documents/git/govtrace push -u origin main)",
+      "Bash(gh auth *)",
+      "Bash(ssh-keygen -t ed25519 -C \"viplovedev@gmail.com\" -f ~/.ssh/id_ed25519 -N \"\")",
+      "Bash(brew install *)",
+      "Bash(git remote *)",
+      "Bash(ssh -T git@github.com)",
+      "Bash(git checkout *)",
+      "Bash(git reset *)"
+    ]
+  }
+}
